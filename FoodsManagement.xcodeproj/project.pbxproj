@@ -14,6 +14,8 @@
 		0187C7D81DFBE58C00361A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0187C7D61DFBE58C00361A77 /* LaunchScreen.storyboard */; };
 		0187C7E31DFBE58C00361A77 /* FoodsManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C7E21DFBE58C00361A77 /* FoodsManagementTests.swift */; };
 		0187C7EE1DFBE58C00361A77 /* FoodsManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C7ED1DFBE58C00361A77 /* FoodsManagementUITests.swift */; };
+		0187C7FC1DFBE7A200361A77 /* breakfastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C7FB1DFBE7A200361A77 /* breakfastViewController.swift */; };
+		0187C7FE1DFBF1B500361A77 /* FoodsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C7FD1DFBF1B500361A77 /* FoodsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0187C7E91DFBE58C00361A77 /* FoodsManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodsManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0187C7ED1DFBE58C00361A77 /* FoodsManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsManagementUITests.swift; sourceTree = "<group>"; };
 		0187C7EF1DFBE58C00361A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0187C7FB1DFBE7A200361A77 /* breakfastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = breakfastViewController.swift; sourceTree = "<group>"; };
+		0187C7FD1DFBF1B500361A77 /* FoodsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodsData.swift; path = ../FoodsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				0187C7CD1DFBE58C00361A77 /* AppDelegate.swift */,
+				0187C7FD1DFBF1B500361A77 /* FoodsData.swift */,
 				0187C7CF1DFBE58C00361A77 /* ViewController.swift */,
+				0187C7FB1DFBE7A200361A77 /* breakfastViewController.swift */,
 				0187C7D11DFBE58C00361A77 /* Main.storyboard */,
 				0187C7D41DFBE58C00361A77 /* Assets.xcassets */,
 				0187C7D61DFBE58C00361A77 /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0187C7D01DFBE58C00361A77 /* ViewController.swift in Sources */,
+				0187C7FC1DFBE7A200361A77 /* breakfastViewController.swift in Sources */,
 				0187C7CE1DFBE58C00361A77 /* AppDelegate.swift in Sources */,
+				0187C7FE1DFBF1B500361A77 /* FoodsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
