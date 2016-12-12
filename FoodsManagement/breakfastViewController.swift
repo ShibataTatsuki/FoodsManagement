@@ -10,6 +10,8 @@ import UIKit
 
 class breakfastViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var TableViewCell: UITableViewCell!
+    
     var FoodsDataArray: [FoodsData] = []
 //    let fruits = ["りんご","みかん","ぶどう"]
     override func viewDidLoad() {
@@ -17,14 +19,14 @@ class breakfastViewController: UIViewController, UITableViewDelegate, UITableVie
 
         // Do any additional setup after loading the view.
         FoodsDataArray.append(FoodsData(name: "ハンバーグ", energy: 268, protein: 15.96, lipid: 16.08, carbohydrate: 14.76))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
-        FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
+        FoodsDataArray.append(FoodsData(name: "カレーライス", energy: 862, protein: 21.01, lipid: 26.54, carbohydrate: 129.18))
+        FoodsDataArray.append(FoodsData(name: "ビーフカレー", energy: 841, protein: 21.31, lipid: 24.15, carbohydrate: 129.08))
+        FoodsDataArray.append(FoodsData(name: "きつねうどん", energy: 453, protein: 17.31, lipid: 10.99, carbohydrate: 68.24))
+        FoodsDataArray.append(FoodsData(name: "フランスパン", energy: 670, protein: 22.56, lipid: 3.12, carbohydrate: 138))
+        FoodsDataArray.append(FoodsData(name: "鍋焼きうどん", energy: 519, protein: 26.27, lipid: 11.93, carbohydrate: 71.96))
+        FoodsDataArray.append(FoodsData(name: "カレーうどん", energy: 492, protein: 14.67, lipid: 15.47, carbohydrate: 70.26))
+        FoodsDataArray.append(FoodsData(name: "カレーそば", energy: 479, protein: 18.3, lipid: 15.95, carbohydrate: 64.78))
+        FoodsDataArray.append(FoodsData(name: "きつねそば", energy: 441, protein:	20.93, lipid: 11.47, carbohydrate: 62.79))
         FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
         FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
         FoodsDataArray.append(FoodsData(name: "a", energy: 1, protein: 1, lipid: 1, carbohydrate: 1))
@@ -47,7 +49,9 @@ class breakfastViewController: UIViewController, UITableViewDelegate, UITableVie
         
         
     }
+   
 
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -64,13 +68,13 @@ class breakfastViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // セルに表示する値を設定する
         cell.textLabel!.text = FoodsDataArray[indexPath.row].name
-        
         return cell
     }
     
     /// セルが選択された時に呼ばれるデリゲートメソッド
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     print("セル番号：(indexPath.row) セルの内容：(fruits[indexPath.row])")
+       
     }
     
 
